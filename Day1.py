@@ -61,9 +61,10 @@ print(count)
 def palindrome(num):
     # 101
     rev=0; temp=num
-    remainder=temp%10
-    rev=(rev*10)+remainder
-    temp=temp/10
+    while temp>0:
+        remainder=temp%10
+        rev=(rev*10)+remainder
+        temp=temp//10
     if(rev==num):
         return ("palidrome")
     else:
