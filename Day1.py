@@ -58,7 +58,7 @@ for char in name_list:
 print(count)
     
 # 9. Check palindrome
-def palindrome(num):
+def isPalindrome(num):
     # 101
     rev=0; temp=num
     while temp>0:
@@ -71,7 +71,7 @@ def palindrome(num):
         return ("not plaindrom")
 
 num = int(input("Enter number"))
-print(palindrome(num))
+print(isPalindrome(num))
 
 # 10. Remove duplicate characters from string
 s_string="Abscedde"
