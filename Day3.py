@@ -15,28 +15,23 @@ print(largestNum,secondLargestNum)
 
 # 2. Merge two lists alternately
 l1=[1,2,5,3,8,10]
-l2=[3,4,8,9,11,24,15]
+l2=["a","b","c","d","e","f"]
 l3=[]
-smallListLength=0
-bigListLength=0
-bigList=[]
-smallList=[]
+l1Len=len(l1)
+l2Len=len(l2)
+minlength=0
 
-if(len(l1)<len(l2)):
-    smallListLength=len(l1)
-    bigListLength=len(l2)
-    bigList=l2
-    smallList=l1
-else:
-    smallListLength=len(l2)
-    bigListLength=len(l1)
+if(l1Len<l2Len):
+    minlength=l1Len
     bigList=l1
-    smallList=l2
+else:
+    minlength=l2Len
+    bigList=l2
 
-for i in range(0 ,smallListLength):
-    l3.append(bigList[i])
-    l3.append(smallList[i])
-for i in range (smallListLength,bigListLength):
+for i in range(0 ,minlength):
+    l3.append(l1[i])
+    l3.append(l2[i])
+for i in range (minlength,len(bigList)):
     l3.append(bigList[i])
 print(l3)
 
