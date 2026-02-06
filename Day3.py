@@ -102,12 +102,3 @@ for word in charList:
         longestWord=word
 print (longestWord)
 
-# 13. Remove special characters from the given sentence . Spaces should not be removed.
-specialChar=["@","_","!"]
-sentence="This @ word have special ! characters"
-sentenceList=sentence.split()
-
-
-# # 4. Invert dictionary (value → key)
-# # 6. Write function for factorial without recursion
-# # 7. write a function for fibonacci series 
