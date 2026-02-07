@@ -1,6 +1,0 @@
-log1 is this file
-
-
-log2 from another file
-log3
-
